@@ -8,6 +8,20 @@ body {
   color: #552271;
 }
 
+.primary-bg-color {
+  background-color: #552271;
+  color: white;
+}
+
+.secondary-color {
+  color: #7b1cad;
+}
+
+.secondary-bg-color {
+  background-color: #7b1cad;
+  color: white;
+}
+
 button {
   outline: none;
   background-image: linear-gradient(to right, #1d0a21, #0f2347);
@@ -21,6 +35,18 @@ button:focus {
   outline: none;
   background-image: linear-gradient(to right, #1d0a21, #0f2347);
 }
+
+.btn,
+.btn-primary {
+  background-image: linear-gradient(to right, #1d0a21, #0f2347);
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-image: linear-gradient(to right, #0f2347, #1d0a21);
+}
+
 .main-container {
   min-height: 85vh;
 }
@@ -64,7 +90,7 @@ button:focus {
 /* Segments Section Starts Here */
 
 .round-circle {
-  background-color: #552271;
+  background-color: #a20053;
 }
 /* Segments Section Ends Here */
 

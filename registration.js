@@ -69,35 +69,72 @@ document.addEventListener("DOMContentLoaded", function() {
     function addMemberFields(numFields) {
         for (let i = 1; i <= numFields; i++) {
             memberInfo.innerHTML += `
-            <div class="w-full bg-white rounded-md shadow-md p-4 mb-4">
-            <h2 class="text-xl font-bold mb-2">Member ${i} Information</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="md:col-span-2"> <!-- This div spans two columns on medium screens and takes full width -->
-                    <label for="member${i}Name" class="block mb-1">Name:</label>
-                    <input type="text" id="member${i}Name" name="member${i}Name" required class="w-full border rounded-md px-4 py-2">
-                </div>
-                <div>
-                    <label for="member${i}GSuite" class="block mb-1">G-Suite:</label>
-                    <input type="text" id="member${i}GSuite" name="member${i}GSuite" required class="w-full border rounded-md px-4 py-2">
-                </div>
-                <div>
-                    <label for="member${i}Phone" class="block mb-1">Phone No:</label>
-                    <input type="tel" id="member${i}Phone" name="member${i}Phone" required class="w-full border rounded-md px-4 py-2">
-                </div>
-                <div>
-                    <label for="member${i}BracuID" class="block mb-1">BRACU ID:</label>
-                    <input type="text" id="member${i}BracuID" name="member${i}BracuID" required class="w-full border rounded-md px-4 py-2">
-                </div>
-                <div>
-                    <label for="member${i}Level" class="block mb-1">Level:</label>
-                    <select id="member${i}Level" name="member${i}Level" required class="w-full border rounded-md px-4 py-2">
-                        <option value="">Select Level</option>
-                        <option value="Senior">Senior (Done with CSE370)</option>
-                        <option value="Junior">Junior (Done with CSE220)</option>
-                    </select>
-                </div>
-            </div>
-        </div>
+    <h2 class="text-xl font-bold mb-2">Member ${i} Information</h2>
+    <div class="grid gap-6 mb-6 md:grid-cols-2">
+    <div class="">
+      <label for="member${i}Name" class="block mb-2">Name:</label>
+      <input
+        type="text"
+        id="member${i}Name"
+        name="member${i}Name"
+        class="block w-full rounded-md border rounded-md px-4 py-2"
+        placeholder="John Doe"
+        required
+      />
+    </div>
+  
+    <div>
+      <label for="member${i}GSuite" class="block mb-2">G-Suite:</label>
+      <input
+        type="text"
+        id="member${i}GSuite"
+        name="member${i}GSuite"
+        class="block w-full rounded-md border rounded-md px-4 py-2"
+        placeholder="jhon.doe@g.bracu.ac.bd"
+        required
+      />
+    </div>
+  
+    <div>
+      <label for="member${i}Phone" class="block mb-2">Phone No:</label>
+      <input
+        type="tel"
+        id="member${i}Phone"
+        name="member${i}Phone"
+        class="block w-full rounded-md border rounded-md px-4 py-2"
+        placeholder="+8801XXXXXXXXX"
+        required
+      />
+    </div>
+  
+    <div>
+      <label for="member${i}BracuID" class="block mb-2">Student ID:</label>
+      <input
+        type="text"
+        id="member${i}BracuID"
+        name="member${i}BracuID"
+        class="block w-full rounded-md border rounded-md px-4 py-2"
+        placeholder="20200000"
+        required
+      />
+    </div>
+  
+    <div>
+      <label for="member${i}Level" class="block mb-2">Level:</label>
+      <select
+        id="member${i}Level"
+        name="member${i}Level"
+        class="block w-full rounded-md border rounded-md px-4 py-2"
+        placeholder="John"
+        required
+      >
+        <option value="">Select Level</option>
+        <option value="Senior">Senior (Done with CSE370)</option>
+        <option value="Junior">Junior (Done with CSE220)</option>
+      </select>
+    </div>
+  
+
         
             `;
         }
