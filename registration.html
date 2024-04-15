@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <!-- Tailwind CSS -->
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JavaScript (Optional, only if you need Bootstrap's JavaScript features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="img/icon-purple.png" type="image/x-icon" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <!-- Logo for medium and large screens -->
+        <a class="navbar-brand logo d-none d-lg-block" href="index.html">
+          <img src="img/logo-purple-white.png" alt="" />
+        </a>
+        <!-- Logo for small screens -->
+        <a class="icon-logo d-block d-lg-none" href="index.html">
+          <img src="img/icon-purple.png" alt="" />
+        </a>
+
+        <!-- Button for toggling the navbar -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Guidelines
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="guidelines.html#pills-hackathon-tab"
+                    >Hackathon</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="guidelines.html#pills-debuggers-tab"
+                    >Debuggers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="guidelines.html#pills-database-wizards-tab"
+                    >Database Wizards</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="guidelines.html#pills-cpc-tab"
+                    >Competitive Programming</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main-container">
+      <div class="container mx-auto p-4 flex flex-col items-center">
+        <h1 class="text-2xl font-bold mb-4">Registration Form</h1>
+        <form
+          name="submit-to-google-sheet"
+          method="POST"
+          id="registrationForm"
+          class="space-y-4 w-full md:w-1/2 bg-white p-4 rounded-md shadow-md"
+        >
+          <!-- Choose Category -->
+          <div class="mb-4">
+            <label for="category" class="block text-lg font-bold mb-2"
+              >Choose Category:</label
+            >
+            <select
+              id="category"
+              name="category"
+              required
+              class="w-full border rounded-md px-4 py-2"
+            >
+              <option value="">Select Category</option>
+              <option value="Hackathon">Hackathon</option>
+              <option value="Debuggers">Debuggers</option>
+              <option value="Database Wizards">Database Wizards</option>
+              <option value="CPC">CPC</option>
+            </select>
+          </div>
+
+          <div id="teamInfo"></div>
+
+          <div id="memberInfo"></div>
+
+          <!-- Payment info -->
+          <!-- <div id="paymentInfo" class="mb-4">
+          <div>
+            <label for="paymentTo" class="block text-lg font-bold mb-2"
+              >Payment to:</label
+            >
+            <select
+              id="paymentTo"
+              name="paymentTo"
+              required
+              class="w-full border rounded-md px-4 py-2"
+            >
+              <option value="">Select Payment Recipient</option>
+              <option value="123456">Person 1 - 123456</option>
+              <option value="789012">Person 2 - 789012</option>
+              <option value="345678">Person 3 - 345678</option>
+            </select>
+          </div>
+
+          <div class="mt-4">
+            <label
+              for="paymentTransactionId"
+              class="block text-lg font-bold mb-2"
+              >Payment Transaction ID:</label
+            >
+            <input
+              type="text"
+              id="paymentTransactionId"
+              name="paymentTransactionId"
+              required
+              class="w-full border rounded-md px-4 py-2"
+            />
+          </div>
+          <div class="mt-4">
+            <label for="paymentBy" class="block text-lg font-bold mb-2"
+              >Payment From (Number):</label
+            >
+            <input
+              type="text"
+              id="paymentBy"
+              name="paymentBy"
+              required
+              class="w-full border rounded-md px-4 py-2"
+            />
+          </div>
+        </div> -->
+
+          <button
+            type="submit"
+            class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          <a href="https://bracucc.org">BUCC</a> | All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="registration.js"></script>
+  </body>
+</html>

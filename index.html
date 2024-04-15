@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      IntraHacktive 1.0 | Organized by BRAC University Computer Club
+    </title>
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JavaScript (Optional, only if you need Bootstrap's JavaScript features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="img/icon-purple.png" type="image/x-icon" />
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <!-- Logo for medium and large screens -->
+        <a class="navbar-brand logo d-none d-lg-block" href="index.html">
+          <img src="img/logo-purple-white.png" alt="" />
+        </a>
+        <!-- Logo for small screens -->
+        <a class="icon-logo d-block d-lg-none" href="index.html">
+          <img src="img/icon-purple.png" alt="" />
+        </a>
+
+        <!-- Button for toggling the navbar -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Guidelines
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="guidelines.html#pills-hackathon-tab"
+                    >Hackathon</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="guidelines.html#pills-debuggers-tab"
+                    >Debuggers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="guidelines.html#pills-database-wizards-tab"
+                    >Database Wizards</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="guidelines.html#pills-cpc-tab"
+                    >Competitive Programming</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="bg-blue-900 text-white py-16 hero-section flex items-center"
+    >
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-4">Ready to take on the challenge?</h2>
+        <p class="text-lg mb-8">
+          Join us at the BUCC IntraHacktive 1.0 for an exhilarating journey into
+          innovation and collaboration!
+        </p>
+        <a class="learn-more-btn" href="#event-details">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="py-16" id="event-details">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center primary-color">
+          Event Details
+        </h2>
+        <div class="flex flex-col md:flex-row md:space-x-8">
+          <!-- Online Preliminary Events -->
+          <div class="md:w-1/2">
+            <div class="mb-8">
+              <h3 class="text-2xl font-semibold mb-4">
+                Online Preliminary Events
+              </h3>
+              <!-- Day 1 -->
+              <div class="mb-6">
+                <div class="flex items-center mb-2">
+                  <div
+                    class="round-circle rounded-full h-16 w-16 flex items-center justify-center text-white font-semibold"
+                  >
+                    Day 1
+                  </div>
+                  <p class="text-lg ml-4">April 10, 2024</p>
+                </div>
+                <div class="ml-12">
+                  <h4 class="text-xl font-semibold mb-2">Registration Opens</h4>
+                  <p class="text-gray-700">
+                    Registration for IntraHacktive 1.0 begins. Participants can
+                    register online through the website.
+                  </p>
+                </div>
+              </div>
+              <!-- Day 2 -->
+              <div class="mb-6">
+                <div class="flex items-center mb-2">
+                  <div
+                    class="round-circle rounded-full h-16 w-16 flex items-center justify-center text-white font-semibold"
+                  >
+                    Day 2
+                  </div>
+                  <p class="text-lg ml-4">April 11, 2024</p>
+                </div>
+                <div class="ml-12">
+                  <h4 class="text-xl font-semibold mb-2">
+                    Online Coding Challenge
+                  </h4>
+                  <p class="text-gray-700">
+                    Participate in our online coding challenge to test your
+                    problem-solving skills.
+                  </p>
+                </div>
+              </div>
+              <!-- Add more preliminary events if needed -->
+            </div>
+          </div>
+          <!-- Final Round Events -->
+          <div class="md:w-1/2">
+            <div>
+              <h3 class="text-2xl font-semibold mb-4">Final Round Events</h3>
+              <!-- Day 3 -->
+              <div class="mb-6">
+                <div class="flex items-center mb-2">
+                  <div
+                    class="round-circle rounded-full h-16 w-16 flex items-center justify-center text-white font-semibold"
+                  >
+                    Day 3
+                  </div>
+                  <p class="text-lg ml-4">April 12, 2024</p>
+                </div>
+                <div class="ml-12">
+                  <h4 class="text-xl font-semibold mb-2">Hackathon</h4>
+                  <p class="text-gray-700">
+                    Join the thrilling hackathon where participants will
+                    collaborate, innovate, and build exciting projects within a
+                    limited timeframe.
+                  </p>
+                </div>
+              </div>
+              <!-- Day 4 -->
+              <div class="mb-6">
+                <div class="flex items-center mb-2">
+                  <div
+                    class="round-circle rounded-full h-16 w-16 flex items-center justify-center text-white font-semibold"
+                  >
+                    Day 4
+                  </div>
+                  <p class="text-lg ml-4">April 13, 2024</p>
+                </div>
+                <div class="ml-12">
+                  <h4 class="text-xl font-semibold mb-2">
+                    Final Presentations
+                  </h4>
+                  <p class="text-gray-700">
+                    Finalists will present their projects to a panel of judges.
+                    Winners will be announced at the end of the event.
+                  </p>
+                </div>
+              </div>
+              <!-- Add more final round events if needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Segments -->
+    <section class="bg-gray-200 py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center primary-color">
+          Segments
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+          <!-- Segment 1 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between h-full"
+          >
+            <div>
+              <img
+                src="img/hackathon.png"
+                alt="Hackathon"
+                class="mb-4 rounded-md"
+              />
+              <h3 class="text-xl font-semibold mb-4">Hackathon</h3>
+              <p class="text-gray-700 mb-4">
+                Immerse yourself in our hackathon where you will collaborate,
+                innovate, and build exciting projects within a limited
+                timeframe.
+              </p>
+            </div>
+            <div>
+              <div class="flex justify-center mt-8">
+                <div class="flex flex-row items-center gap-8">
+                  <a
+                    href="guidelines.html"
+                    class="text-white py-2 px-4 rounded-md guidelines-btn"
+                    >Guidelines</a
+                  >
+                  <a
+                    href="registration.html"
+                    class="text-white py-2 px-4 rounded-md register-btn"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Segment 2 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between h-full"
+          >
+            <div>
+              <img
+                src="img/hackathon.png"
+                alt="Debuggers"
+                class="mb-4 rounded-md"
+              />
+              <h3 class="text-xl font-semibold mb-4">Debuggers</h3>
+              <p class="text-gray-700 mb-4">
+                Engage in the art of debugging by participating in our challenge
+                to find bugs in some codebases through reverse engineering.
+              </p>
+            </div>
+            <div>
+              <div class="flex justify-center mt-8">
+                <div class="flex flex-row items-center gap-8">
+                  <a
+                    href="guidelines.html"
+                    class="text-white py-2 px-4 rounded-md guidelines-btn"
+                    >Guidelines</a
+                  >
+                  <a
+                    href="registration.html"
+                    class="text-white py-2 px-4 rounded-md register-btn"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Segment 3 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between h-full"
+          >
+            <div>
+              <img
+                src="img/hackathon.png"
+                alt="Database Wizards"
+                class="mb-4 rounded-md"
+              />
+              <h3 class="text-xl font-semibold mb-4">Database Wizards</h3>
+              <p class="text-gray-700 mb-4">
+                Join our Database Wizards team contest! Gather your team of two
+                members and compete to showcase your skills.
+              </p>
+            </div>
+            <div>
+              <div class="flex justify-center mt-8">
+                <div class="flex flex-row items-center gap-8">
+                  <a
+                    href="guidelines.html"
+                    class="text-white py-2 px-4 rounded-md guidelines-btn"
+                    >Guidelines</a
+                  >
+                  <a
+                    href="registration.html"
+                    class="text-white py-2 px-4 rounded-md register-btn"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Segment 4 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-between h-full"
+          >
+            <div>
+              <img
+                src="img/hackathon.png"
+                alt="Networking"
+                class="mb-4 rounded-md"
+              />
+              <h3 class="text-xl font-semibold mb-4">
+                Competitive Programming
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Get ready to sharpen your coding skills and compete against top
+                programmers in our Competitive Programming contest.
+              </p>
+            </div>
+            <div>
+              <div class="flex justify-center mt-8">
+                <div class="flex flex-row items-center gap-8">
+                  <a
+                    href="guidelines.html"
+                    class="text-white py-2 px-4 rounded-md guidelines-btn"
+                    >Guidelines</a
+                  >
+                  <a
+                    href="registration.html"
+                    class="text-white py-2 px-4 rounded-md register-btn"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section class="bg-gray-200 py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center primary-color">
+          Our Sponsors and Partners
+        </h2>
+        <div class="logos">
+          <div class="logos-slide">
+            <img src="img/sponsors/grameenphone.png" />
+            <img src="img/sponsors/huawei.png" />
+            <img src="img/sponsors/jamunatv.png" />
+            <img src="img/sponsors/projectcode.png" />
+          </div>
+          <div class="logos-slide">
+            <img src="img/sponsors/grameenphone.png" />
+            <img src="img/sponsors/huawei.png" />
+            <img src="img/sponsors/jamunatv.png" />
+            <img src="img/sponsors/projectcode.png" />
+          </div>
+          <div class="logos-slide">
+            <img src="img/sponsors/grameenphone.png" />
+            <img src="img/sponsors/huawei.png" />
+            <img src="img/sponsors/jamunatv.png" />
+            <img src="img/sponsors/projectcode.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Organized by BUCC -->
+    <section class="bg-gray-100 py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center primary-color">
+          Organized by BUCC
+        </h2>
+        <div class="flex flex-col md:flex-row justify-center">
+          <!-- Logo -->
+          <div class="flex justify-center h-full">
+            <img
+              src="img/bucc-logo-full.svg"
+              alt="BUCC"
+              class="mb-4 md:mb-0 rounded-md w-60 md:mr-8 mx-auto"
+            />
+          </div>
+
+          <!-- Divider -->
+          <hr
+            class="hidden md:block border-t border-gray-300 my-0 mx-8 md:h-12 md:w-0"
+          />
+          <hr class="block md:hidden border-t border-gray-300 my-8 w-full" />
+          <!-- Contact Details -->
+          <div
+            class="text-gray-700 text-center md:text-left md:text-left md:w-auto"
+          >
+            <!-- For large screens, text alignment to the left -->
+            <p class="md:text-left">Contact Number: +8801717399105</p>
+            <p class="md:text-left">Email: marketing.bucc@g.bracu.ac.bd</p>
+            <p class="md:text-left">
+              Website: <a href="https://bracucc.org">www.bracucc.org</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          <a href="https://bracucc.org">BUCC</a> | All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IntraHacktive 1.0</title>
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- JavaScript (Optional, only if you need Bootstrap's JavaScript features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="img/icon-purple.png" type="image/x-icon" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <!-- Logo for medium and large screens -->
+        <a class="navbar-brand logo d-none d-lg-block" href="index.html">
+          <img src="img/logo-purple-white.png" alt="" />
+        </a>
+        <!-- Logo for small screens -->
+        <a class="icon-logo d-block d-lg-none" href="index.html">
+          <img src="img/icon-purple.png" alt="" />
+        </a>
+
+        <!-- Button for toggling the navbar -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Guidelines
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="guidelines.html#pills-hackathon-tab"
+                    >Hackathon</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="guidelines.html#pills-debuggers-tab"
+                    >Debuggers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="guidelines.html#pills-database-wizards-tab"
+                    >Database Wizards</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="guidelines.html#pills-cpc-tab"
+                    >Competitive Programming</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main-container">
+      <!-- Guidelines Content -->
+      <div class="container mt-5">
+        <div class="tab-content">
+          <ul
+            class="nav nav-pills flex justify-center mb-3"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active rounded-t-lg"
+                id="pills-hackathon-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-hackathon"
+                type="button"
+                role="tab"
+                aria-controls="pills-hackathon"
+                aria-selected="true"
+              >
+                Hackathon
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link border-t border-r border-l border-gray-300 rounded-t-lg"
+                id="pills-debuggers-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-debuggers"
+                type="button"
+                role="tab"
+                aria-controls="pills-debuggers"
+                aria-selected="false"
+              >
+                Debuggers
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link border-t border-r border-l border-gray-300 rounded-t-lg"
+                id="pills-database-wizards-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-database-wizards"
+                type="button"
+                role="tab"
+                aria-controls="pills-database-wizards"
+                aria-selected="false"
+              >
+                Database Wizards
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link border-t border-r border-l border-gray-300 rounded-t-lg"
+                id="pills-cpc-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-cpc"
+                type="button"
+                role="tab"
+                aria-controls="pills-cpc"
+                aria-selected="false"
+              >
+                Competitive Programming
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-hackathon"
+              role="tabpanel"
+              aria-labelledby="pills-hackathon-tab"
+            >
+              <!-- Hackathon Guidelines Content -->
+              <h2 class="text-3xl font-bold">Hackathon Guidelines</h2>
+              <p>Add your guidelines for the Hackathon segment here.</p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-debuggers"
+              role="tabpanel"
+              aria-labelledby="pills-debuggers-tab"
+            >
+              <!-- Debuggers Guidelines Content -->
+              <h2 class="text-3xl font-bold">Debuggers Guidelines</h2>
+              <p>Add your guidelines for the Debuggers segment here.</p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-database-wizards"
+              role="tabpanel"
+              aria-labelledby="pills-database-wizards-tab"
+            >
+              <!-- Database Wizards Guidelines Content -->
+              <h2 class="text-3xl font-bold">Database Wizards Guidelines</h2>
+              <p>Add your guidelines for the Database Wizards segment here.</p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-cpc"
+              role="tabpanel"
+              aria-labelledby="pills-cpc-tab"
+            >
+              <!-- Competitive Programming Guidelines Content -->
+              <h2 class="text-3xl font-bold">
+                Competitive Programming Guidelines
+              </h2>
+              <p>
+                Add your guidelines for the Competitive Programming segment
+                here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          <a href="https://bracucc.org">BUCC</a> | All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

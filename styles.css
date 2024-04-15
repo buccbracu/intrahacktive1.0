@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.primary-color {
+  color: #552271;
+}
+
+button {
+  outline: none;
+  background-image: linear-gradient(to right, #1d0a21, #0f2347);
+}
+
+button:hover {
+  background-image: linear-gradient(to right, #0f2347, #1d0a21);
+}
+
+button:focus {
+  outline: none;
+  background-image: linear-gradient(to right, #1d0a21, #0f2347);
+}
+.main-container {
+  min-height: 85vh;
+}
+
+.navbar {
+  background-image: linear-gradient(to right, #1d0a21, #0f2347);
+}
+
+.navbar-nav > li > .dropdown-menu a:active {
+  background-image: linear-gradient(to right, #1d0a21, #0f2347);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+
+.icon-logo {
+  display: block;
+  width: 50px;
+  margin-left: 15px;
+}
+
+.hero-section {
+  height: 70vh;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.learn-more-btn {
+  background: white;
+  color: #1d0a21;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: large;
+  font-weight: 600;
+}
+
+/* Segments Section Starts Here */
+
+.round-circle {
+  background-color: #552271;
+}
+/* Segments Section Ends Here */
+
+/* Segments Section Starts Here */
+.bg-white {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.guidelines-btn {
+  background-image: linear-gradient(to right, #301036, #0f2347);
+}
+
+.guidelines-btn:hover {
+  background-image: linear-gradient(to right, #0f2347, #1d0a21);
+}
+
+.register-btn {
+  background-image: linear-gradient(to right, #1d0a21, #0f2347);
+}
+
+.register-btn:hover {
+  background-image: linear-gradient(to right, #0f2347, #1d0a21);
+}
+
+/* Segments Section Ends Here */
+
+/* Sponsors Section Starts Here */
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  display: flex;
+  overflow: hidden;
+  padding: 50px 20px;
+}
+
+.logos-slide {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  animation: slide 10s linear infinite;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+/* Sponsors Section Ends Here */
+
+.vertical-bar {
+  background: red;
+  width: 10px;
+}
+
+footer {
+  background-image: linear-gradient(to left, #1d0a21, #0f2347);
+}
+
+.tab-content ul li .active {
+  background-color: #552271 !important;
+  color: #fff !important;
+}
+
+.tab-content ul li button {
+  color: #552271 !important;
+}
