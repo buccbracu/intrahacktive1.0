@@ -433,9 +433,9 @@
           </div>
         </div>
         <div class="mt-8 bg-gray-100 shadow-md">
-          <div class="py-6 px-4 important-dates">
+          <div class="py-6 px-4 important-dates flex flex-col items-center">
             <button
-              class="btn btn-primary mb-4 text-lg font-semibold w-full"
+              class="btn btn-primary mb-4 text-md font-semibold w-full md:w-1/3 md:text-lg"
               data-bs-toggle="collapse"
               data-bs-target="#importantDatesCollapse"
               aria-expanded="false"
@@ -443,71 +443,85 @@
             >
               Important Dates
             </button>
-            <div class="collapse px-8" id="importantDatesCollapse">
-              <ul class="list-none pl-0">
-                <li class="mb-6">
-                  <div class="flex items-center mb-2">
-                    <div
-                      class="w-4 h-4 round-circle rounded-full flex-shrink-0 mr-2"
-                    ></div>
-                    <span class="font-semibold">Registration begins:</span>
-                    April 15
-                  </div>
-                  <p class="text-gray-600">
-                    Starting point for the event registration process.
-                  </p>
-                </li>
-                <li class="mb-6">
-                  <div class="flex items-center mb-2">
-                    <div
-                      class="w-4 h-4 round-circle rounded-full flex-shrink-0 mr-2"
-                    ></div>
-                    <span class="font-semibold">Registration closes:</span>
-                    April 19
-                  </div>
-                  <p class="text-gray-600">
-                    Deadline for completing the event registration.
-                  </p>
-                </li>
-                <li class="mb-6">
-                  <div class="flex items-center mb-2">
-                    <div
-                      class="w-4 h-4 round-circle rounded-full flex-shrink-0 mr-2"
-                    ></div>
-                    <span class="font-semibold"
-                      >Online preliminary rounds:</span
-                    >
-                    April 20-23
-                  </div>
-                  <p class="text-gray-600">
-                    Online rounds to select participants for the final rounds.
-                  </p>
-                </li>
-                <li class="mb-6">
-                  <div class="flex items-center mb-2">
-                    <div
-                      class="w-4 h-4 round-circle rounded-full flex-shrink-0 mr-2"
-                    ></div>
-                    <span class="font-semibold">Onsite final rounds:</span> May
-                    26-30
-                  </div>
-                  <p class="text-gray-600">
-                    Final competition rounds conducted on-site.
-                  </p>
-                </li>
-                <li>
-                  <div class="flex items-center">
-                    <div
-                      class="w-4 h-4 round-circle rounded-full flex-shrink-0 mr-2"
-                    ></div>
-                    <span class="font-semibold">Prize-giving ceremony:</span>
-                    May 26-30
-                  </div>
-                  <p class="text-gray-600">
-                    Announcement of winners and distribution of prizes.
-                  </p>
-                </li>
-              </ul>
+            <div class="w-full">
+              <!-- Added a wrapper with width to control the collapse width -->
+              <div
+                class="collapse px-8 mt-8 text-left"
+                id="importantDatesCollapse"
+              >
+                <ul class="list-none pl-0">
+                  <li class="mb-6">
+                    <div class="flex items-center mb-2">
+                      <div
+                        class="w-4 h-4 round-circle rounded-full flex-shrink-0 mr-2"
+                      ></div>
+                      <span class="font-semibold mr-2"
+                        >Registration begins:</span
+                      >
+                      April 15
+                    </div>
+                    <p class="text-gray-600">
+                      Starting point for the event registration process.
+                    </p>
+                  </li>
+                  <li class="mb-6">
+                    <div class="flex items-center mb-2">
+                      <div
+                        class="w-4 h-4 round-circle rounded-full flex-shrink-0 mr-2"
+                      ></div>
+                      <span class="font-semibold mr-2"
+                        >Registration closes:</span
+                      >
+                      April 19
+                    </div>
+                    <p class="text-gray-600">
+                      Deadline for completing the event registration.
+                    </p>
+                  </li>
+                  <li class="mb-6">
+                    <div class="flex items-center mb-2">
+                      <div
+                        class="w-4 h-4 round-circle rounded-full flex-shrink-0 mr-2"
+                      ></div>
+                      <span class="font-semibold mr-2"
+                        >Online preliminary rounds:</span
+                      >
+                      April 20-23
+                    </div>
+                    <p class="text-gray-600">
+                      Online rounds to select participants for the final rounds.
+                    </p>
+                  </li>
+                  <li class="mb-6">
+                    <div class="flex items-center mb-2">
+                      <div
+                        class="w-4 h-4 round-circle rounded-full flex-shrink-0 mr-2"
+                      ></div>
+                      <span class="font-semibold mr-2"
+                        >Onsite final rounds:</span
+                      >
+                      May 26-30
+                    </div>
+                    <p class="text-gray-600">
+                      Final competition rounds conducted on-site.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="flex items-center">
+                      <div
+                        class="w-4 h-4 round-circle rounded-full flex-shrink-0 mr-2"
+                      ></div>
+                      <span class="font-semibold mr-2"
+                        >Prize-giving ceremony:</span
+                      >
+                      May 26-30
+                    </div>
+                    <p class="text-gray-600">
+                      Announcement of winners and distribution of prizes.
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="primary-bg-color px-4 py-3 rounded-md rounded-t-none">
