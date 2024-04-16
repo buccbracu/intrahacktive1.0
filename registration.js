@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function() {
     >
       <option value="">Select Level</option>
       <option value="Senior">Senior (Done with CSE370)</option>
-      <option value="Junior">Junior (Done with CSE220)</option>
+      <option value="Junior">Junior (Upto CSE220)</option>
     </select>
   </div>`;
       }
