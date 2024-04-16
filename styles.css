@@ -88,8 +88,15 @@ button:focus {
 }
 
 /* Segments Section Starts Here */
-
 .round-circle {
+  background-color: #a20053;
+}
+
+.preliminary-round-circle {
+  background-color: #7b1cad;
+}
+
+.final-round-circle {
   background-color: #a20053;
 }
 /* Segments Section Ends Here */
