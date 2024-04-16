@@ -72,8 +72,8 @@ button:focus {
 }
 
 .hero-section {
-  height: 70vh;
-  background-image: url("img/background.jpg");
+  height: 90vh;
+  background-image: url("img/hero-background.jpg");
   background-size: cover;
   background-position: center;
 }
