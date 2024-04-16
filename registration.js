@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbyL3LX7ArAvFcyT_fT8SbCPHxJpPaV7leWhaZhOTYV7WiUtxALbWubCRlfV817akQP6/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbyHnjOn9gwnXZJLjxCGBbINHB3gvkrfq7kEV2475td3matUJWLY4Dxy_NjX5U-g-lzWtw/exec";
 const form = document.forms["submit-to-google-sheet"];
 const submitButton = form.querySelector('button[type="submit"]');
 
@@ -155,7 +155,6 @@ form.addEventListener("submit", (e) => {
     .then((response) => {
       if (response.ok) {
         console.log("Success!", response);
-        // Redirect to registration-success.html
         window.location.href = "registration-success.html";
       } else {
         console.error("Error!", response.statusText);
@@ -163,6 +162,6 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message))
     .finally(() => {
-      submitButton.textContent = "Submit"; // Revert button text
+      submitButton.textContent = "Submit";
     });
 });
