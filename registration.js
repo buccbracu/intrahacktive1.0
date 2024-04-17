@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   <div class="">
                       <div>
                           <label for="teamName" class="block mb-1">Team Name:</label>
-                          <input type="text" id="teamName" name="teamName" required class="w-full border rounded-md px-4 py-2">
+                          <input type="text" id="teamName" name="teamName" placeholder="return None" required class="w-full border rounded-md px-4 py-2">
                       </div>
           `;
 
@@ -54,11 +54,11 @@ document.addEventListener("DOMContentLoaded", function() {
               teamInfo.innerHTML += `
               <div>
               <label for="projectName" class="block mb-1">Project Name:</label>
-              <input type="text" id="projectName" name="projectName" required class="w-full border rounded-md px-4 py-2 mb-4">
+              <input type="text" id="projectName" name="projectName" placeholder="Club Management System" required class="w-full border rounded-md px-4 py-2 mb-4">
           </div>
           <div>
               <label for="projectPlan" class="block mb-1">Project Plan (Drive Link):</label>
-              <input type="text" id="projectPlan" name="projectPlan" required class="w-full border rounded-md px-4 py-2 mb-4">
+              <input type="text" id="projectPlan" name="projectPlan" placeholder="https://drive.google.com/drive/folders/tDimDbI9AVBm3tx_1Hj9JyLuI4LWeCun" required class="w-full border rounded-md px-4 py-2 mb-4">
           </div>
           
               `;
